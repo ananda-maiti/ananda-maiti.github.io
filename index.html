@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desktop Sensor</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin: 0 0 30px;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f2f2f2;
+    }
+
+    .steps {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 24px 28px;
+      background: #fafafa;
+    }
+
+    .steps h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .steps { padding: 18px; }
+      .images img { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Desktop Sensor</h1>
+
+    <div class="images">
+      <img src="https://via.placeholder.com/400x220?text=Device+Image+1" alt="Desktop Sensor placeholder 1">
+      <img src="https://via.placeholder.com/400x220?text=Device+Image+2" alt="Desktop Sensor placeholder 2">
+      <img src="https://via.placeholder.com/400x220?text=Device+Image+3" alt="Desktop Sensor placeholder 3">
+    </div>
+
+    <div class="steps">
+      <h2>Setup Steps</h2>
+      <ol>
+        <li>Place the device on the right or left of your monitor or laptop screen.</li>
+        <li>Connect the USB to the device.</li>
+        <li>Sit down.</li>
+        <li>Connect the USB to your laptop, CPU, monitor, or any power source. Any USB port will work.</li>
+        <li>Observe the LED on the device. It will blink three times, indicating a successful initialization.</li>
+        <li>Then the LED should remain off while you are seated. Keep it at a distance of about 50–70 cm from you.</li>
+        <li>Adjust the top sensor so that it points over your head, while the bottom sensor points towards you.</li>
+        <li>Now when you stand up, you will be blocking the top sensor and the LED should turn on.</li>
+        <li>The LED should go off when you sit down and turn on when you stand up.</li>
+        <li>That is it. Leave the device as it is wherever it is placed.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
