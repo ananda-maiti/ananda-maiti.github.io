@@ -49,6 +49,27 @@
       font-size: 1.05rem;
     }
 
+    .step.center {
+      text-align: center;
+    }
+    
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 800px;   /* optional: limits width on large screens */
+      margin: 0 auto;
+      aspect-ratio: 16 / 9;  /* keeps proper video ratio */
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       .step img { height: 180px; }
@@ -101,9 +122,12 @@
       <p><font color='red'>The LED will keep blinking if you are away from your desk for 2 hours or you have not stood up for 2 hours. You just need to stand once in front of the device to stop this.</font></p>
     </div>
 
-    <div class="step" style="text-align: center;">
-      <p> All the steps in a video</p>
-      <iframe src="https://1drv.ms/v/c/a053e115afd1d895/IQRZFdKgfStrQpeBLYjGhphNAesBB-FotRVKhvnFho5mZpc" width="640" height="480" frameborder="0" scrolling="no"></iframe>      
+    <div class="step center">
+      <p>All the steps in a video</p>
+
+      <div class="video-wrapper">
+        <iframe src="https://1drv.ms/v/c/a053e115afd1d895/IQRZFdKgfStrQpeBLYjGhphNAesBB-FotRVKhvnFho5mZpc" width="640" height="480" frameborder="0" scrolling="no"></iframe>     
+      </div>
     </div>
 
     <div class="step" style="text-align: center;">
